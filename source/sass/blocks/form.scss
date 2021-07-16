@@ -1,0 +1,124 @@
+.form {
+  width: 74%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  text-align: center;
+
+  @media (max-width: $tablet-width-max) {
+    width: 42%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 60px;
+  }
+
+  @media (max-width: 680px) {
+    width: 54%;
+  }
+
+  @media (max-width: 520px) {
+    width: 60%;
+  }
+
+  @media (max-width: 480px) {
+    width: 80%;
+  }
+
+  @media (max-width: 355px) {
+    width: 90%;
+  }
+}
+
+.form p {
+  margin: 0;
+  margin-bottom: 20px;
+  font-family: $font-stack;
+  font-size: 17px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $basic-white;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 18px;
+    color: $basic-black;
+  }
+
+  @media (max-width: $mobile-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.form input {
+  margin-bottom: 20px;
+  padding-top: 14px;
+  padding-bottom: 10px;
+  padding-left: 29px;
+  font-family: $font-stack;
+  font-size: 15px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  border: 1px solid $gray-border;
+  border-radius: 6px;
+  outline: none;
+
+  &::placeholder {
+    color: $text-color;
+    opacity: 50%;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 2px solid $primary;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 21px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-left: 26px;
+  }
+}
+
+.form button {
+  margin-bottom: 10px;
+  padding: 16px 48px;
+  font-family: $font-stack;
+  font-size: 15px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: $basic-black;
+  background-color: $primary;
+  border-radius: 6px;
+  border: 1px solid $primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border: 1px solid $gray-border;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding: 16px 48px 14px;
+  }
+
+  @media (max-width: 760px) {
+    padding: 15px 30px;
+  }
+
+  @media (max-width: 625px) {
+    padding: 15px 28px;
+  }
+}

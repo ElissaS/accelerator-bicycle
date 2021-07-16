@@ -1,4 +1,22 @@
-@import "general/normalize.scss";
-@import "general/fonts.scss";
-@import "general/variables.scss";
-@import "general/common.scss";
+@import "general/normalize";
+@import "general/fonts";
+@import "general/variables";
+@import "general/common";
+@import "general/mixin";
+
+@import "blocks/container";
+
+// styles for header
+@import "blocks/page-header";
+@import "blocks/main-nav";
+@import "blocks/site-list";
+
+// styles for main
+@import "blocks/page-body";
+@import "blocks/welcome";
+@import "blocks/form";
+
+
+// styles for main
+@import "blocks/page-footer";
+@import "blocks/contacts-list";

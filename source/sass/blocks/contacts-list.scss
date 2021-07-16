@@ -1,0 +1,55 @@
+.contacts-list {
+  @include list-reset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  @media (max-width: $mobile-width-max) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+.contacts-list__item {
+  margin-bottom: 22px;
+
+  &:hover,
+  &:focus {
+    .user-list__icon {
+      opacity: 0.7;
+    }
+
+    .contacts-list__link {
+      color: $primary;
+    }
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.contacts-list__link {
+  position: relative;
+  font-family: $font-stack;
+  font-size: 16px;
+  line-height: 22px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+}
+
+.contacts-list__icon {
+  position: absolute;
+  top: 0;
+
+  &--phone {
+    left: -36px;
+  }
+
+  &--mail {
+    left: -40px;
+  }
+}
