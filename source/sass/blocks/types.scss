@@ -1,0 +1,239 @@
+.types {
+  padding-top: 150px;
+  padding-bottom: 132px;
+  background-color: $background-for-types;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 50px;
+    padding-bottom: 70px;
+  }
+
+  @media (max-width: $mobile-middle-width) {
+    padding-top: 61px;
+    padding-bottom: 58px;
+  }
+}
+
+.types__container {
+  padding-right: 157px;
+  padding-left: 157px;
+
+  @media (max-width: 1350px) {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-right: 89px;
+    padding-left: 89px;
+  }
+
+  @media (max-width: $mobile-middle-width) {
+    padding: 0 25px;
+  }
+}
+
+.types h2 {
+  margin: 0;
+  margin-bottom: 50px;
+  font-family: $font-stack;
+  font-size: 30px;
+  line-height: 30px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-align: center;
+  color: $secondary;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 41px;
+  }
+}
+
+.types__list {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @media (max-width: $mobile-middle-width) {
+    display: block;
+    margin: 0;
+  }
+}
+
+.types__item {
+  margin: $bike-types-offset / 2;
+  margin-top: calc(#{$bike-types-offset} / 2 + 10px);
+  width: calc((100% / 3) - #{$bike-types-offset});
+  transition: all $transition-time-slow ease-in-out;
+
+  @media (max-width: $tablet-width-max) {
+    margin: $bike-types-offset / 2;
+    margin-top: calc(#{$bike-types-offset} / 2);
+    width: calc((100% / 2) - #{$bike-types-offset});
+  }
+
+  @media (max-width: $mobile-middle-width) {
+    width: 100%;
+    margin: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.types img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.types__inner-pic {
+  position: relative;
+  max-height: 503px;
+  margin-top: 11px;
+  margin-bottom: 20px;
+  z-index: $z-bike-item;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: -20%;
+    width: 180px;
+    height: 180px;
+    border: 27px solid $primary;
+    border-radius: 50%;
+    z-index: $z-photo-under;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    min-height: 300px;
+    max-height: none;
+    margin-top: 0;
+
+    &::before {
+      width: 127px;
+      height: 127px;
+      top: 46%;
+      left: -17%;
+      border: 18px solid $primary;
+    }
+  }
+
+  @media (max-width: $mobile-middle-width) {
+    &::before {
+      top: 215px;
+      left: -32px;
+    }
+  }
+
+  @media (max-width: $mobile-width) {
+    &::before {
+      top: 193px;
+      left: -35px;
+    }
+  }
+}
+
+.types__item:nth-child(3n+2) .types__inner-pic {
+  max-height: 566px;
+  margin-top: 29px;
+  z-index: $z-bike-item;
+
+  &::before,
+  &::after {
+    width: 47px;
+    height: 47px;
+    border-radius: 0;
+    border: 8px solid $primary;
+    z-index: $z-photo-upper;
+  }
+
+  &::before {
+    top: -3%;
+    left: -5%;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 94%;
+    left: 91%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 0;
+    max-height: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.types__item:nth-child(3n) .types__inner-pic {
+  max-height: 513px;
+  margin-top: 1px;
+  z-index: $z-bike-item;
+
+  &::before {
+    top: -7%;
+    left: 80%;
+    width: 95px;
+    height: 95px;
+    border: 17px solid $primary;
+    border-radius: 50%;
+    z-index: $z-photo-upper;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin-top: 0;
+    min-height: 300px;
+    max-height: none;
+
+    &::before {
+      top: -8%;
+      left: 83%;
+      width: 68px;
+      height: 68px;
+      border: 13px solid #0ad9c6;
+    }
+  }
+
+  @media (max-width: $mobile-middle-width) {
+    &::before {
+      top: -5%;
+      left: 84%;
+    }
+  }
+}
+
+@media (max-width: $mobile-width) {
+  &::before {
+    top: -11%;
+    left: 83%;
+  }
+}
+
+.types h3 {
+  margin: 0;
+  margin-bottom: 15px;
+  font-family: $font-stack;
+  font-size: 22px;
+  line-height: 34px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  text-align: center;
+  color: $basic-black;
+}

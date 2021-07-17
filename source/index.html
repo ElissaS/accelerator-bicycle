@@ -84,68 +84,64 @@
             <p>Профессиональные консультации!</p>
           </li>
         </ol>
-        <!-- <div>
-          <p>01</p>
-          <p>Самый широкий выбор велосипедов!</p>
-        </div>
-        <div>
-          <p>02</p>
-          <p>Доставка велосипедов по всей России!</p>
-        </div>
-        <div>
-          <p>03</p>
-          <p>Большой выбор крутых аксессуаров!</p>
-        </div>
-        <div>
-          <p>04</p>
-          <p>Профессиональные консультации!</p>
-        </div> -->
       </div>
     </section>
     <section class="types" id="types-of-bicycles">
-      <h2>Виды велосипедов</h2>
-      <div>
-        <h3>Дорожный велосипед</h3>
-        <picture>
-          <source type="image/webp" media="(max-width: 1023px)"
-            srcset="img/types-for-road-tablet-mobile.webp 1x, img/types-for-road-tablet-mobile@2x.webp 2x">
-          <source type="image/webp" srcset="img/types-for-road-desktop.webp 1x, img/types-for-road-desktop@2x.webp 2x">
-          <!-- 1х: 270px; 2x: 540px -->
-          <source media="(max-width: 1023px)"
-            srcset="img/types-for-road-tablet-mobile.jpg 1x, img/types-for-road-tablet-mobile@2x.jpg 2x">
-          <!-- 1х: 342px; 2x: 684px -->
-          <img src="img/types-for-road-desktop.jpg" width="342" height="503"
-            srcset="img/types-for-road-desktop@2x.jpg 2x" alt="дорожный велосипед">
-        </picture>
-      </div>
-      <div>
-        <h3>Горный велосипед</h3>
-        <picture>
-          <source type="image/webp" media="(max-width: 1023px)"
-            srcset="img/types-for-mountains-tablet-mobile.webp 1x, img/types-for-mountains-tablet-mobile@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/types-for-mountains-desktop.webp 1x, img/types-for-mountains-desktop@2x.webp 2x">
-          <!-- 1х: 270px; 2x: 540px -->
-          <source media="(max-width: 1023px)"
-            srcset="img/types-for-mountains-tablet-mobile.jpg 1x, img/types-for-mountains-tablet-mobile@2x.jpg 2x">
-          <!-- 1х: 342px; 2x: 684px -->
-          <img src="img/types-for-mountains-desktop.jpg" width="342" height="566"
-            srcset="img/types-for-mountains-desktop@2x.jpg 2x" alt="горный велосипед">
-        </picture>
-      </div>
-      <div>
-        <h3>Детский велосипед</h3>
-        <picture>
-          <source type="image/webp" media="(max-width: 1023px)"
-            srcset="img/types-for-road-tablet-mobile.webp 1x, img/types-for-road-tablet-mobile@2x.webp 2x">
-          <source type="image/webp" srcset="img/types-for-road-desktop.webp 1x, img/types-for-road-desktop@2x.webp 2x">
-          <!-- 1х: 270px; 2x: 540px -->
-          <source media="(max-width: 1023px)"
-            srcset="img/types-for-road-tablet-mobile.jpg 1x, img/types-for-road-tablet-mobile@2x.jpg 2x">
-          <!-- 1х: 342px; 2x: 684px -->
-          <img src="img/types-for-road-desktop.jpg" width="342" height="513"
-            srcset="img/types-for-road-desktop@2x.jpg 2x" alt="детский велосипед">
-        </picture>
+      <div class="types__container container">
+        <h2>Виды велосипедов</h2>
+        <ul class="types__list">
+          <li class="types__item">
+            <div class="types__inner-pic">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/types-for-road-tablet-mobile.webp 1x, img/types-for-road-tablet-mobile@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/types-for-road-desktop.webp 1x, img/types-for-road-desktop@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(max-width: 1023px)"
+                  srcset="img/types-for-road-tablet-mobile.jpg 1x, img/types-for-road-tablet-mobile@2x.jpg 2x">
+                <!-- 1х: 342px; 2x: 684px -->
+                <img src="img/types-for-road-desktop.jpg" width="342" height="503"
+                  srcset="img/types-for-road-desktop@2x.jpg 2x" alt="дорожный велосипед">
+              </picture>
+            </div>
+            <h3>Дорожный велосипед</h3>
+          </li>
+          <li class="types__item">
+            <div class="types__inner-pic">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/types-for-mountains-tablet-mobile.webp 1x, img/types-for-mountains-tablet-mobile@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/types-for-mountains-desktop.webp 1x, img/types-for-mountains-desktop@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(max-width: 1023px)"
+                  srcset="img/types-for-mountains-tablet-mobile.jpg 1x, img/types-for-mountains-tablet-mobile@2x.jpg 2x">
+                <!-- 1х: 342px; 2x: 684px -->
+                <img src="img/types-for-mountains-desktop.jpg" width="342" height="566"
+                  srcset="img/types-for-mountains-desktop@2x.jpg 2x" alt="горный велосипед">
+              </picture>
+            </div>
+            <h3>Горный велосипед</h3>
+          </li>
+          <li class="types__item">
+            <div class="types__inner-pic">
+              <picture>
+                <source type="image/webp" media="(max-width: 1023px)"
+                  srcset="img/types-for-kids-tablet-mobile.webp 1x, img/types-for-kids-tablet-mobile@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="img/types-for-kids-desktop.webp 1x, img/types-for-kids-desktop@2x.webp 2x">
+                <!-- 1х: 270px; 2x: 540px -->
+                <source media="(max-width: 1023px)"
+                  srcset="img/types-for-kids-tablet-mobile.jpg 1x, img/types-for-kids-tablet-mobile@2x.jpg 2x">
+                <!-- 1х: 342px; 2x: 684px -->
+                <img src="img/types-for-kids-desktop.jpg" width="342" height="513"
+                  srcset="img/types-for-kids-desktop@2x.jpg 2x" alt="детский велосипед">
+              </picture>
+            </div>
+            <h3>Детский велосипед</h3>
+          </li>
+        </ul>
       </div>
     </section>
     <section class="video" id="video-about-bicycles">

@@ -1,7 +1,7 @@
 .welcome {
   padding-top: 320px;
   padding-bottom: 230px;
-  background-color: $dark;
+  background-color: $dark-back-for-main-pic;
   background-image: url("../img/main-back-desktop.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
     padding: 134px 15px 60px;
     width: 100%;
     text-align: center;
-    background-color: $dark;
+    background-color: $dark-back-for-main-pic;
     background-image: url("../img/main-back-tablet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
