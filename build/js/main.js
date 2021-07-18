@@ -15,11 +15,10 @@ headerToggle.addEventListener('click', function () {
   }
 });
 
-
 const formButton = document.querySelector('.form__button');
 const nameInput = document.querySelector('.form__input--name');
 const phoneInput = document.querySelector('.form__input--phone');
-const isStorageSupport = true;
+let isStorageSupport = true;
 const storage = "";
 
 

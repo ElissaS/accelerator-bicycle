@@ -1,6 +1,6 @@
 .welcome {
-  padding-top: 320px;
-  padding-bottom: 230px;
+  padding-top: 318px;
+  padding-bottom: 240px;
   background-color: $dark-back-for-main-pic;
   background-image: url("../img/main-back-desktop.jpg");
   background-size: cover;
@@ -42,7 +42,7 @@
 }
 
 .welcome__information {
-  width: 82%;
+  width: 80%;
   align-self: flex-end;
 
   @media (max-width: $tablet-width-max) {
