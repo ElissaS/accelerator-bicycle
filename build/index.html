@@ -38,7 +38,7 @@
           </li>
         </ul>
       </nav>
-      <button class="page-header__toggle button" type="button">
+      <button class="page-header__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
     </div>
@@ -132,21 +132,25 @@
       </div>
     </section>
     <section class="video" id="video-about-bicycles">
-      <h2>Видео про велосипеды</h2>
-      <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
-      <div class="bike-video__video-wrap">
-        <picture>
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/video-pic-mobile.webp 1x, img/video-pic-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-pic-tablet.webp 1x, img/video-pic-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/video-pic-desktop.webp 1x, img/video-pic-desktop@2x.webp 2x">
-          <!-- 1х: 288px; 2x: 576px -->
-          <source media="(max-width: 767px)" srcset="img/video-pic-mobile.jpg 1x, img/video-pic-mobile@2x.jpg 2x">
-          <!-- 1х: 503px; 2x: 1006px -->
-          <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-pic-tablet@2x.jpg 2x">
-          <!-- 1х: 929px; 2x: 1858px -->
-          <img class="bike-video__image" src="img/video-pic-desktop.jpg" srcset="img/video-pic-desktop@2x.jpg" alt="гоночный велосипед" width="929" height="522">
-        </picture>
-        <button class="bike-video__button button button--video" type="button" aria-label="Воспроизвести видео"></button>
+      <div class="video__container container">
+        <h2>Видео про велосипеды</h2>
+        <p>В этом видео мы подробно расскажем про особенности выбора велосипеда для себя.</p>
+        <div class="video__video-wrap">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/video-pic-mobile.webp 1x, img/video-pic-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/video-pic-tablet.webp 1x, img/video-pic-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/video-pic-desktop.webp 1x, img/video-pic-desktop@2x.webp 2x">
+            <!-- 1х: 288px; 2x: 576px -->
+            <source media="(max-width: 767px)" srcset="img/video-pic-mobile.jpg 1x, img/video-pic-mobile@2x.jpg 2x">
+            <!-- 1х: 503px; 2x: 1006px -->
+            <source media="(max-width: 1023px)" srcset="img/video-tablet.jpg 1x, img/video-pic-tablet@2x.jpg 2x">
+            <!-- 1х: 929px; 2x: 1858px -->
+            <img class="bike-video__image" src="img/video-pic-desktop.jpg" srcset="img/video-pic-desktop@2x.jpg" alt="гоночный велосипед" width="929" height="522">
+          </picture>
+          <button class="video__button" type="button">
+            <span class="visually-hidden">Воспроизвести видео</span>
+          </button>
+        </div>
       </div>
     </section>
   </main>

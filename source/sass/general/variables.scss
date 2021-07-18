@@ -27,14 +27,15 @@ $gray-for-line: rgba(255, 255, 255, 0.2);
 //opened menu
 $gray-for-open-menu-text: #48494D;
 $arrow-color: #2C2E3F;
-$background-for-links: #F6F6F6;
-$background-for-types:#F6F7F9;
+$back-for-links: #F6F6F6;
+
+// for blocks
+$back-for-types:#F6F7F9;
+$back-for-video-block:#131314;
 
 // backgrounds for pictures
 $dark-back-for-main-pic: #222222;
-$sand-back-types-road-bike: #C3A684;
-$sand-back-types-mount-bike: #7B5F4A;
-$sand-back-types-kids-bike: #C9BFB3;
+$back-types-for-bike: #C9BFB3;
 
 // z-indexes:
 $z-photo-under: -1;

@@ -1,7 +1,7 @@
 .types {
   padding-top: 150px;
   padding-bottom: 132px;
-  background-color: $background-for-types;
+  background-color: $back-for-types;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 50px;
@@ -94,6 +94,7 @@
   height: auto;
   object-fit: cover;
   border-radius: 10px;
+  background-color: $back-types-for-bike;
 }
 
 .types__inner-pic {
