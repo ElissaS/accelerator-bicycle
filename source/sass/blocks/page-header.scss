@@ -126,6 +126,7 @@
     background-position: center;
     background-size: 50px;
     z-index: $z-menu-button;
+    cursor: pointer;
 
     &:hover,
     &:focus {
