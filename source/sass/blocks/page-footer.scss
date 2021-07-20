@@ -1,8 +1,6 @@
 .page-footer {
   padding-top: 248px;
   padding-bottom: 74px;
-  // flex: 0 0 auto;
-
 
   @media (max-width: $tablet-width-max) {
     padding-top: 155px;
@@ -45,6 +43,10 @@
     font-size: 24px;
   }
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
   @media (max-width: $mobile-width-max) {
     padding: 0 15px;
     font-size: 18px;
@@ -52,7 +54,7 @@
 }
 
 .page-footer__container p {
-  width: 50%;
+  width: 61%;
   margin: 0 auto 42px;
   font-family: $font-stack;
   font-size: 17px;
@@ -61,6 +63,14 @@
   font-weight: 400;
   text-align: center;
   color: $black-transporant-70;
+
+  @media (max-width: 1248px) {
+    width: 75%;
+  }
+
+  @media (max-width: 1105px) {
+    width: 90%;
+  }
 
   @media (max-width: $tablet-width-max) {
     width: 100%;

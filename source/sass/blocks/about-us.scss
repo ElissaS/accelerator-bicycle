@@ -6,6 +6,16 @@
     padding-top: 20px;
     padding-bottom: 70px;
   }
+
+
+  @media (max-width: $tablet-width) {
+    padding-bottom: 27px;
+  }
+
+  @media (max-width: $mobile-width) {
+    padding-top: 22px;
+    padding-bottom: 34px;
+  }
 }
 
 .about-us__container {
@@ -51,8 +61,7 @@
 }
 
 .about-us h2 {
-  margin: 0;
-  margin-bottom: 50px;
+  margin: 0 0 50px;
   font-family: $font-stack;
   font-size: 30px;
   line-height: 30px;
@@ -78,6 +87,10 @@
   @media (max-width: 710px) {
     flex-direction: column;
   }
+
+  @media (max-width: $mobile-width) {
+    display: block;
+  }
 }
 
 .about-us li {
@@ -95,11 +108,17 @@
   }
 
   @media (max-width: $tablet-width) {
+    width: 47%;
+    min-height: 164px;
+  }
+
+  @media (max-width: $mobile-width) {
     width: 100%;
+    min-height: unset;
   }
 }
 
-.abous-us p {
+.about-us__item p {
   margin: 0;
   margin-bottom: 14px;
   font-family: $font-stack;
@@ -115,13 +134,23 @@
     margin-bottom: 18px;
   }
 
+  @media (max-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
   @media (max-width: $mobile-width) {
-    margin-bottom: 37px;
     font-size: 18px;
+    margin-bottom: 10px;
+
+    &:nth-child(2n) {
+      color: red;
+      margin-bottom: 44px;
+    }
   }
 }
 
 .about-us b {
+  margin: 0;
   font-family: $font-stack;
   font-size: 28px;
   line-height: 38px;
@@ -132,6 +161,6 @@
   color: $primary;
 
   @media (max-width: $mobile-width) {
-    margin-bottom: 17px;
+    display: block;
   }
 }
