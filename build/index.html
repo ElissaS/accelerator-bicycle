@@ -13,6 +13,12 @@
   <link rel="preload" href="fonts/open-sans-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="preload" href="fonts/open-sans-semibold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.min.css">
+  <!-- <link rel="preload" href="/img/main-back-desktop.jpg" as="image" media="(max-width: 1440px)">
+  <link rel="preload" href="/img/main-back-tablet.jpg" as="image" media="(max-width: 1023px)">
+  <link rel="preload" href="/img/main-back-mobile.jpg" as="image" media="(max-width: 320px)">
+  <link rel="preload" href="/img/main-back-desktop@2x.jpg" as="image" media="(max-width: 1440px)">
+  <link rel="preload" href="/img/main-back-tablet@2x.jpg" as="image" media="(max-width: 1023px)">
+  <link rel="preload" href="/img/main-back-mobile@2x.jpg" as="image" media="(max-width: 320px)"> -->
 </head>
 
 <body class="page-body">
@@ -165,11 +171,11 @@
           <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
           <!-- 1х: 319px; 2x: 638px -->
-          <source media="(max-width: 767px)" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x">
+          <source media="(max-width: 767px)" srcset="img/map-mobile.jpg 1x, img/map-mobile@2x.jpg 2x">
           <!-- 1х: 698px; 2x: 1396px -->
-          <source media="(max-width: 1023px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <source media="(max-width: 1023px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
           <!-- 1х: 957px; 2x: 1914px -->
-          <img src="img/map-desktop.png" srcset="img/map-desktop@2x.png" alt="Расположение нашей компании на карте" width="957" height="530">
+          <img src="img/map-desktop.jpg" srcset="img/map-desktop@2x.jpg" loading="lazy" alt="Расположение нашей компании на карте" width="957" height="530">
         </picture>
       </div>
       <ul class="page-footer__contacts-list contacts-list">

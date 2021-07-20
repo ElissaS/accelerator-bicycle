@@ -7,7 +7,6 @@
     padding-bottom: 70px;
   }
 
-
   @media (max-width: $tablet-width) {
     padding-bottom: 27px;
   }
@@ -19,42 +18,17 @@
 }
 
 .about-us__container {
-  @media (max-width: 1072px) {
-    padding-right: 100px;
-    padding-left: 100px;
-  }
-
   @media (max-width: $tablet-width-max) {
-    padding-right: 151px;
-    padding-left: 151px;
-  }
-
-  @media (max-width: 1000px) {
-    padding-right: 140px;
-    padding-left: 140px;
-  }
-
-  @media (max-width: 835px) {
     padding-right: 106px;
     padding-left: 106px;
   }
 
-  @media (max-width: 710px) {
-    padding-right: 90px;
-    padding-left: 90px;
+  @media (max-width: $mobile-middle-width) {
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
-  @media (max-width: 600px) {
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-
-  @media (max-width: 390px) {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  @media (max-width: 340px) {
+  @media (max-width: $mobile-width) {
     padding-right: 15px;
     padding-left: 15px;
   }
@@ -112,7 +86,7 @@
     min-height: 164px;
   }
 
-  @media (max-width: $mobile-width) {
+  @media (max-width: 711px) {
     width: 100%;
     min-height: unset;
   }

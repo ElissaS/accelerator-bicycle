@@ -2,7 +2,7 @@ const formButton = document.querySelector('.form__button');
 const nameInput = document.querySelector('.form__input--name');
 const phoneInput = document.querySelector('.form__input--phone');
 let isStorageSupport = true;
-const storage = "";
+const storage = '';
 
 
 const onButtonHandler = function() {
@@ -13,8 +13,8 @@ const onButtonHandler = function() {
 };
 
 try {
-  storageName = localStorage.getItem("form__input--name");
-  storagePhone = localStorage.getItem("form__input--phone");
+  storageName = localStorage.getItem('form__input--name');
+  storagePhone = localStorage.getItem('form__input--phone');
 } catch (err) {
   isStorageSupport = false;
 }
