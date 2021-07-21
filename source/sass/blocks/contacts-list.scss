@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   justify-content: flex-start;
 
-  @media (max-width: $tablet-width-max) {
+  @media (max-width: $mobile-middle-width) {
     flex-direction: column;
     justify-content: center;
     align-items: center;
