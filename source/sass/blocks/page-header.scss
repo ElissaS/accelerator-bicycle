@@ -72,23 +72,10 @@
 }
 
 .page-header__container {
-  padding: 0 280px;
-
-
-  @media (max-width: 1432px) {
-    padding: 0 150px;
-  }
-
-  @media (max-width: 1200px) {
-    padding: 0 70px;
-  }
+  max-width: 960px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 0 21px;
-  }
-
-  @media (max-width: $tablet-width) {
-    padding: 0 16px;
+    max-width: unset;
   }
 }
 
@@ -138,7 +125,6 @@
     }
   }
 }
-
 
 .page-header__main-nav {
   @media (max-width: $tablet-width-max) {

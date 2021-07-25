@@ -1,42 +1,30 @@
 .video {
   padding-top: 120px;
-  padding-bottom: 115px;
+  padding-bottom: 117px;
   text-align: center;
   background-color: $back-for-video-block;
 
   @media (max-width: $tablet-width-max) {
     padding-top: 70px;
-    padding-bottom: 67px;
-  }
-
-  @media (max-width: $tablet-width) {
     padding-bottom: 73px;
   }
 
-  @media (max-width: $mobile-middle-width) {
+  @media (max-width: $mobile-width-max) {
     padding-top: 84px;
     padding-bottom: 72px;
   }
 }
 
 .video__container {
-  padding-right: 255px;
-  padding-left: 255px;
-
+  max-width: 1009px;
 
   @media (max-width: $tablet-width-max) {
-    padding-right: 105px;
-    padding-left: 105px;
+    max-width: 545px;
   }
 
-  @media (max-width: $tablet-width) {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-
-  @media (max-width: $mobile-width) {
-    padding-right: 16px;
-    padding-left: 14px;
+  @media (max-width: $mobile-width-max) {
+    max-width: 320px;
+    padding: 0;
   }
 }
 
@@ -58,7 +46,7 @@
 }
 
 .video p {
-  width: 37%;
+  max-width: 340px;
   margin: 0 auto 56px;
   font-family: $font-stack;
   font-size: 16px;
@@ -70,17 +58,14 @@
   color: $white-transporant-70;
 
   @media (max-width: $tablet-width-max) {
-    width: 65%;
+    max-width: 430px;
     margin-bottom: 40px;
-  }
-
-  @media (max-width: $mobile-middle-width) {
-    width: 100%;
-    margin-bottom: 50px;
-  }
-
-  @media (max-width: $mobile-width) {
     letter-spacing: -.02em;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 290px;
+    margin-bottom: 53px;
   }
 }
 
@@ -90,18 +75,12 @@
   margin-bottom: -218px;
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: -160px;
-    width: 69%;
+    margin-bottom: -161px;
   }
 
-  @media(max-width: $mobile-middle-width) {
-    margin-bottom: -126px;
-    width: 100%;
-  }
-
-  @media(max-width: $mobile-width) {
-    margin-bottom: -122px;
-    width: 100%;
+  @media(max-width: $mobile-width-max) {
+    max-width: 288px;
+    margin-bottom: -124px;
   }
 }
 
@@ -138,21 +117,13 @@
   @media (max-width: $tablet-width-max) {
     top: 34%;
     left: 41%;
-    width: 70px;
-    height: 70px;
-    background-size: 70px 70px;
-  }
-
-  @media (max-width: $tablet-width) {
-    top: 34%;
-    left: 41%;
     width: 90px;
     height: 90px;
     background-size: 90px 90px;
   }
 
-  @media (max-width: $mobile-width) {
-    top: 31%;
+  @media (max-width: $mobile-width-max) {
+    top: 29%;
     left: 39%;
     width: 65px;
     height: 65px;

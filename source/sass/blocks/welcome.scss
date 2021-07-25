@@ -21,15 +21,7 @@
 .welcome__container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 280px;
-
-  @media (max-width: 1430px) {
-    padding: 0 150px;
-  }
-
-  @media (max-width: 1230px) {
-    padding: 0 70px;
-  }
+  max-width: 960px;
 
   @media (max-width: $tablet-width-max) {
     position: relative;
@@ -37,6 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: unset;
     padding: 0;
   }
 }
@@ -47,7 +40,7 @@
   align-self: flex-end;
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: 70px;
+    margin-bottom: 41px;
     padding: 135px 15px 80px;
     width: 100%;
     text-align: center;
@@ -62,11 +55,7 @@
     }
   }
 
-  @media (max-width: $tablet-width-max) {
-    margin-bottom: 41px;
-  }
-
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-max) {
     padding: 121px 0 69px;
     background-image: url("../img/main-back-mobile.jpg");
 
@@ -115,18 +104,14 @@
   opacity: 80%;
 
   @media (max-width: $tablet-width-max) {
-    width: 48%;
+    width: 52%;
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
     letter-spacing: -0.026em;
   }
 
-  @media (max-width: $tablet-width) {
-    width: 60%;
-  }
-
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-max) {
     width: 90%;
   }
 }

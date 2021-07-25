@@ -5,45 +5,30 @@
 
   @media (max-width: $tablet-width-max) {
     padding-top: 50px;
-    padding-bottom: 70px;
+    padding-bottom: 34px;
   }
 
-  @media (max-width: $tablet-width) {
-    padding-bottom: 30px;
-  }
-
-  @media (max-width: $mobile-middle-width) {
-    padding-top: 61px;
-    padding-bottom: 58px;
-  }
-
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-max) {
     padding-top: 51px;
-    padding-bottom: 12px;
+    padding-bottom: 10px;
   }
 }
 
 .types__container {
-  padding-right: 132px;
-  padding-left: 132px;
+  max-width: 1259px;
 
   @media (max-width: $tablet-width-max) {
-    padding-right: 100px;
-    padding-left: 100px;
+    max-width: 683px;
   }
 
-  @media (max-width: $tablet-width) {
-    padding-right: 65px;
-    padding-left: 65px;
-  }
-
-  @media (max-width: $mobile-middle-width) {
-    padding: 0 25px;
+  @media (max-width: $mobile-width-max) {
+    max-width: 302px;
   }
 }
 
 .types h2 {
-  margin: 0 0 13px;
+  margin: 0;
+  margin-bottom: 13px;
   font-family: $font-stack;
   font-size: 30px;
   line-height: 30px;
@@ -54,16 +39,12 @@
   color: $secondary;
 
   @media (max-width: $tablet-width-max) {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     font-size: 24px;
     line-height: 41px;
   }
 
-  @media (max-width: $tablet-width) {
-    margin-bottom: 5px;
-  }
-
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-max) {
     margin-bottom: 30px;
   }
 }
@@ -74,7 +55,7 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  @media (max-width: $mobile-middle-width) {
+  @media (max-width: $mobile-width-max) {
     display: block;
     margin: 0;
   }
@@ -107,38 +88,34 @@
     &::before {
       width: 127px;
       height: 127px;
-      top: 46%;
-      left: -17%;
+      // top: 46%;
+      // left: -17%;
+      top: 55%;
+      left: -14%;
       border: 18px solid $primary;
     }
   }
+  // @media (max-width: $tablet-width) {
+  //   &::before {
+  //     top: 55%;
+  //     left: -14%;
+  //   }
+  // }
 
-  @media (max-width: $tablet-width) {
-    &::before {
-      top: 55%;
-      left: -14%;
-    }
-  }
-
-  @media (max-width: $mobile-middle-width) {
+  @media (max-width: $mobile-width-max) {
     width: 100%;
     margin: 0;
     margin-top: 0;
-    margin-bottom: 40px;
-
-    &::before {
-      top: 27%;
-      left: 21%;
-    }
-  }
-
-  @media (max-width: $mobile-width) {
     margin-bottom: 45px;
 
     &::before {
       top: 57%;
       left: -9%;
     }
+    // &::before {
+    //   top: 27%;
+    //   left: 21%;
+    // }
   }
 
   &:last-child {
@@ -172,7 +149,6 @@
   }
 
   @media (max-width: $tablet-width-max) {
-
     &::before,
     &::after {
       display: none;
@@ -192,32 +168,31 @@
     z-index: $z-photo-upper;
   }
 
-  @media (max-width: $tablet-width-max) {
+  // @media (max-width: $tablet-width-max) {
+  //   &::before {
+  //     top: -8%;
+  //     left: 65%;
+  //   }
+  // }
 
+  @media (max-width: $tablet-width-max) {
     &::before {
-      top: -8%;
-      left: 65%;
+      top: -5%;
+      left: 84%;
       width: 68px;
       height: 68px;
       border: 13px solid #0ad9c6;
     }
   }
 
-  @media (max-width: $tablet-width) {
-    &::before {
-      top: -5%;
-      left: 84%;
-    }
-  }
+  // @media (max-width: $mobile-width) {
+  //   &::before {
+  //     top: -8%;
+  //     left: 65%;
+  //   }
+  // }
 
-  @media (max-width: $mobile-middle-width) {
-    &::before {
-      top: -8%;
-      left: 65%;
-    }
-  }
-
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width-max) {
     &::before {
       top: -6%;
       left: 80%;
@@ -238,14 +213,11 @@
     min-height: 300px;
     max-height: none;
     margin-top: 0;
+    margin-bottom: 18px;
     border-radius: 10px;
   }
 
-  @media (max-width: $tablet-width) {
-    margin-bottom: 18px;
-  }
-
-  @media (max-width: $mobile-middle-width) {
+  @media (max-width: $mobile-width-max) {
     margin: 0 auto 18px;
   }
 }
@@ -265,7 +237,6 @@
     height: auto;
     object-fit: cover;
   }
-
 }
 
 .types__item:nth-child(3n+2) .types__inner-pic {

@@ -12,21 +12,21 @@
     padding-bottom: 30px;
   }
 
-  @media (max-width: 680px) {
-    width: 54%;
-  }
-
-  @media (max-width: 520px) {
-    width: 60%;
-  }
-
-  @media (max-width: 480px) {
-    width: 80%;
-  }
-
-  @media (max-width: 355px) {
+  @media (max-width: $mobile-width-max) {
     width: 90%;
   }
+
+  // @media (max-width: 520px) {
+  //   width: 60%;
+  // }
+
+  // @media (max-width: 480px) {
+  //   width: 80%;
+  // }
+
+  // @media (max-width: 355px) {
+  //   width: 90%;
+  // }
 }
 
 .form p {
