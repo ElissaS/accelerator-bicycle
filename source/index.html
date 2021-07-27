@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -19,7 +19,7 @@
 
   <header class="page-header page-header--closed page-header--nojs">
     <div class="page-header__container container">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo">
         <img src="img/icons/logo.svg" alt="Логотип компании Moon" width="68" height="21">
       </a>
       <nav class="page-header__main-nav main-nav">
@@ -59,7 +59,7 @@
             placeholder="Введите Ваше Имя" required>
           <label class="visually-hidden" for="user-phone">Ваш номер телефона</label>
           <input class="form__input form__input--phone" type="tel" name="tel" id="user-phone"
-            placeholder="Введите Ваш номер телефона" pattern="[0-9]{10}" required="">
+            placeholder="Введите Ваш номер телефона" pattern="+7[0-9]{10}" title="формат номера +79119000000" required>
           <button class="form__button" type="submit">Подобрать велосипед мечты</button>
         </form>
       </div>
@@ -92,53 +92,59 @@
         <h2>Виды велосипедов</h2>
         <ul class="types__list">
           <li class="types__item">
-            <div class="types__inner-pic">
-              <!-- <picture> -->
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/types-for-road-tablet-mobile.webp 1x, img/types-for-road-tablet-mobile@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/types-for-road-desktop.webp 1x, img/types-for-road-desktop@2x.webp 2x">
-              <!-- 1х: 270px; 2x: 540px -->
-              <source media="(max-width: 1023px)"
-                srcset="img/types-for-road-tablet-mobile.jpg 1x, img/types-for-road-tablet-mobile@2x.jpg 2x">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/types-for-road-desktop.jpg" loading="lazy" width="342" height="503"
-                srcset="img/types-for-road-desktop@2x.jpg 2x" alt="дорожный велосипед">
-              <!-- </picture> -->
+            <div class="types__inner-container">
+              <div class="types__inner-pic">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/types-for-road-tablet-mobile.webp 1x, img/types-for-road-tablet-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/types-for-road-desktop.webp 1x, img/types-for-road-desktop@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source media="(max-width: 1023px)"
+                    srcset="img/types-for-road-tablet-mobile.jpg 1x, img/types-for-road-tablet-mobile@2x.jpg 2x">
+                  <!-- 1х: 342px; 2x: 684px -->
+                  <img src="img/types-for-road-desktop.jpg" loading="lazy" width="342" height="503"
+                    srcset="img/types-for-road-desktop@2x.jpg 2x" alt="дорожный велосипед">
+                </picture>
+              </div>
             </div>
             <h3>Дорожный велосипед</h3>
           </li>
           <li class="types__item">
-            <div class="types__inner-pic">
-              <!-- <picture> -->
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/types-for-mountains-tablet-mobile.webp 1x, img/types-for-mountains-tablet-mobile@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/types-for-mountains-desktop.webp 1x, img/types-for-mountains-desktop@2x.webp 2x">
-              <!-- 1х: 270px; 2x: 540px -->
-              <source media="(max-width: 1023px)"
-                srcset="img/types-for-mountains-tablet-mobile.jpg 1x, img/types-for-mountains-tablet-mobile@2x.jpg 2x">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/types-for-mountains-desktop.jpg" loading="lazy" width="342" height="566"
-                srcset="img/types-for-mountains-desktop@2x.jpg 2x" alt="горный велосипед">
-              <!-- </picture> -->
+            <div class="types__inner-container">
+              <div class="types__inner-pic">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/types-for-mountains-tablet-mobile.webp 1x, img/types-for-mountains-tablet-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/types-for-mountains-desktop.webp 1x, img/types-for-mountains-desktop@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source media="(max-width: 1023px)"
+                    srcset="img/types-for-mountains-tablet-mobile.jpg 1x, img/types-for-mountains-tablet-mobile@2x.jpg 2x">
+                  <!-- 1х: 342px; 2x: 684px -->
+                  <img src="img/types-for-mountains-desktop.jpg" loading="lazy" width="342" height="566"
+                    srcset="img/types-for-mountains-desktop@2x.jpg 2x" alt="горный велосипед">
+                </picture>
+              </div>
             </div>
             <h3>Горный велосипед</h3>
           </li>
           <li class="types__item">
-            <div class="types__inner-pic">
-              <!-- <picture> -->
-              <source type="image/webp" media="(max-width: 1023px)"
-                srcset="img/types-for-kids-tablet-mobile.webp 1x, img/types-for-kids-tablet-mobile@2x.webp 2x">
-              <source type="image/webp"
-                srcset="img/types-for-kids-desktop.webp 1x, img/types-for-kids-desktop@2x.webp 2x">
-              <!-- 1х: 270px; 2x: 540px -->
-              <source media="(max-width: 1023px)"
-                srcset="img/types-for-kids-tablet-mobile.jpg 1x, img/types-for-kids-tablet-mobile@2x.jpg 2x">
-              <!-- 1х: 342px; 2x: 684px -->
-              <img src="img/types-for-kids-desktop.jpg" loading="lazy" width="342" height="513"
-                srcset="img/types-for-kids-desktop@2x.jpg 2x" alt="детский велосипед">
-              <!-- </picture> -->
+            <div class="types__inner-container">
+              <div class="types__inner-pic">
+                <picture>
+                  <source type="image/webp" media="(max-width: 1023px)"
+                    srcset="img/types-for-kids-tablet-mobile.webp 1x, img/types-for-kids-tablet-mobile@2x.webp 2x">
+                  <source type="image/webp"
+                    srcset="img/types-for-kids-desktop.webp 1x, img/types-for-kids-desktop@2x.webp 2x">
+                  <!-- 1х: 270px; 2x: 540px -->
+                  <source media="(max-width: 1023px)"
+                    srcset="img/types-for-kids-tablet-mobile.jpg 1x, img/types-for-kids-tablet-mobile@2x.jpg 2x">
+                  <!-- 1х: 342px; 2x: 684px -->
+                  <img src="img/types-for-kids-desktop.jpg" loading="lazy" width="342" height="513"
+                    srcset="img/types-for-kids-desktop@2x.jpg 2x" alt="детский велосипед">
+                </picture>
+              </div>
             </div>
             <h3>Детский велосипед</h3>
           </li>
