@@ -51,11 +51,6 @@
   flex-wrap: wrap;
   justify-content: center;
 
-
-  // @media (max-width: $tablet-width-max) {
-  //   justify-content: space-between;
-  // }
-
   @media (max-width: $mobile-width-max) {
     flex-direction: column;
     display: block;

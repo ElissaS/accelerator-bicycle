@@ -34,16 +34,3 @@ for (let i = 0; i < menuLinks.length; i++) {
     closeMenu();
   });
 }
-
-// for (let i = 0; i < requiredInputs.length; i++) {
-//   console.log(requiredInputs[i]);
-//   requiredInputs[i].addEventListener('invalid', function () {
-//     if (!requiredInputs[i].value) {
-//       requiredInputs[i].setCustomValidity('Заполните поле бл.');
-//     } else {
-//       console.log('aaa');
-//       requiredInputs[i].setCustomValidity('Заполните поле бл.');
-//     }
-//   });
-// }
-// oninvalid="setCustomValidity('Custom Message')
