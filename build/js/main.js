@@ -35,19 +35,6 @@ for (let i = 0; i < menuLinks.length; i++) {
   });
 }
 
-// for (let i = 0; i < requiredInputs.length; i++) {
-//   console.log(requiredInputs[i]);
-//   requiredInputs[i].addEventListener('invalid', function () {
-//     if (!requiredInputs[i].value) {
-//       requiredInputs[i].setCustomValidity('Заполните поле бл.');
-//     } else {
-//       console.log('aaa');
-//       requiredInputs[i].setCustomValidity('Заполните поле бл.');
-//     }
-//   });
-// }
-// oninvalid="setCustomValidity('Custom Message')
-
 const formButton = document.querySelector('.form__button');
 const nameInput = document.querySelector('.form__input--name');
 const phoneInput = document.querySelector('.form__input--phone');
